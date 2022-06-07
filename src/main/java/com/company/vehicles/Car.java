@@ -18,35 +18,31 @@ public class Car {
         this.driver = driver;
     }
 
-    public Car() {
-    }
-
-
     public void start() {
-        System.out.println("Let's go");
+        System.out.println("Let's go!");
     }
 
 
     public void stop() {
-        System.out.println("Stop");
+        System.out.println("Stop!");
     }
 
 
     public void turnRight() {
-        System.out.println("Turn right");
+        System.out.println("Turn right!");
     }
 
 
     public void turnLeft() {
-        System.out.println("Turn left");
+        System.out.println("Turn left!");
     }
 
 
     @Override
     public String toString() {
-        return String.format("Car brand - " + carBrand
-                + ", car class - " + carClass
-                + ", weight - " + weight
+        return String.format("Car brand: " + carBrand
+                + ", car class: " + carClass
+                + ", weight: " + weight
                 + " tons. %n" + engine + " %n" + driver);
     }
 }

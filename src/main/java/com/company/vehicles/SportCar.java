@@ -4,15 +4,16 @@ import com.company.details.Engine;
 import com.company.professions.Driver;
 
 public class SportCar extends Car {
-    public final String CAR_CLASS = "sport car";
+    private static final String CAR_CLASS = "sport car";
     public int maximumSpeed;
 
-
-    public SportCar(String carBrand, int weight, Engine engine, int maximumSpeed, Driver driver) {
-        this.carBrand = carBrand;
-        this.weight = weight;
-        this.engine = engine;
-        this.driver = driver;
+    public SportCar(String carBrand, int weight, int maximumSpeed, Engine engine, Driver driver) {
+        super(carBrand, CAR_CLASS, weight, engine, driver);
         this.maximumSpeed = maximumSpeed;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + String.format("\nAdditional car information: maximum speed: " + maximumSpeed);
     }
 }

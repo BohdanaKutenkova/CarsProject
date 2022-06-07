@@ -15,10 +15,10 @@ public class Driver extends Person {
 
     @Override
     public String toString() {
-        return String.format("Driver name - " + name +
-                ", age - " + age + ", sex - " + sex +
-                ", phone number - " + phoneNumber +
-                ", driver experience - " + driverExperience +
+        return String.format("Driver name: " + name +
+                ", age: " + age + ", sex: " + sex +
+                ", phone number: " + phoneNumber +
+                ", driver experience: " + driverExperience +
                 " years.");
     }
 }
