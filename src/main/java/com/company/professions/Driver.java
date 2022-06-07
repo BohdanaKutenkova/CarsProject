@@ -5,12 +5,12 @@ import com.company.entities.Person;
 public class Driver extends Person {
     public int driverExperience;
 
-    public Driver (String n, int a, String s, long ph, int ex) {
-        this.name = n;
-        this.age = a;
-        this.sex = s;
-        this.phoneNumber = ph;
-        this.driverExperience = ex;
+    public Driver(String name, int age, String sex, long phoneNumber, int driverExperience) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        this.phoneNumber = phoneNumber;
+        this.driverExperience = driverExperience;
     }
 
     @Override

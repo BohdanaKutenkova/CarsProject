@@ -1,9 +1,13 @@
 package com.company.vehicles;
 
-public class Lorry extends Car{
+import com.company.details.Engine;
+import com.company.professions.Driver;
+
+public class Lorry extends Car {
     public int loadBearingCapacity;
 
-    public Lorry (String br, String cl, int w) {
-        super(br, cl, w);
+    public Lorry(String carBrand, String carClass, int weight, int loadBearingCapacity, Engine engine,  Driver driver) {
+        super(carBrand, carClass, weight, engine, driver);
+        this.loadBearingCapacity = loadBearingCapacity;
     }
 }

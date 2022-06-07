@@ -1,9 +1,18 @@
 package com.company.vehicles;
 
-public class SportCar extends Car {
-    public int loadBearingCapacity;
+import com.company.details.Engine;
+import com.company.professions.Driver;
 
-    public SportCar (String br, String cl, int w) {
-        super(br, cl, w);
+public class SportCar extends Car {
+    public final String CAR_CLASS = "sport car";
+    public int maximumSpeed;
+
+
+    public SportCar(String carBrand, int weight, Engine engine, int maximumSpeed, Driver driver) {
+        this.carBrand = carBrand;
+        this.weight = weight;
+        this.engine = engine;
+        this.driver = driver;
+        this.maximumSpeed = maximumSpeed;
     }
 }

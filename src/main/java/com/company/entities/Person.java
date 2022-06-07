@@ -5,5 +5,5 @@ public class Person {
     public int age;
     public String sex;
     public long phoneNumber;
-    }
+}
 
